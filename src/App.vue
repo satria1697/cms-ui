@@ -3,7 +3,7 @@ import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <div class="flex flex-col h-screen">
+  <div class="flex flex-col h-screen overflow-hidden bg-gray-200">
     <div class="flex justify-between bg-primary text-white px-2.5 py-3.5">
       <span>Company Name</span>
       <span>Hi User</span>

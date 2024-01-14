@@ -18,7 +18,7 @@ const loginAction = () => {
   if (data.username == 'mikael' && data.password == 'test1234') {
     miToast.success('Success Login')
     loginService.setTokenToLocalStorage('token')
-    router.push({ name: 'home' })
+    router.push({ name: 'dashboard' })
     return
   }
   miToast.failed('Error Login')
@@ -27,7 +27,7 @@ const loginAction = () => {
 
 <template>
   <div class="grid place-content-center h-full">
-    <form @submit.prevent="() => loginAction()">
+    <form class="bg-white px-4 py-3 rounded-md" @submit.prevent="() => loginAction()">
       <div class="mb-2">
         <span class="text-3xl font-semibold">Login</span>
       </div>
