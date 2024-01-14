@@ -9,16 +9,9 @@ const router = createRouter({
       component: () => import('../views/HomeView.vue')
     },
     {
-      path: '/story-book',
-      name: 'story-book',
-      component: () => import('../views/StoryBook/StoryBook.vue'),
-      children: [
-        {
-          path: 'button',
-          name: 'story-book:button',
-          component: () => import('../views/StoryBook/StoryBookButton/StoryBookButton.vue')
-        }
-      ]
+      path: '/login',
+      name: 'login',
+      component: () => import('../views/login/LoginPage.vue')
     }
   ]
 })

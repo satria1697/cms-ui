@@ -53,7 +53,7 @@ const classList = computed(() => {
     baseValue.push('hover:bg-primary')
     return baseValue.join(' ')
   }
-  baseValue.push('bg-primary', 'text-quaternary')
+  baseValue.push('bg-primary', 'text-white')
   return baseValue.join(' ')
 })
 </script>

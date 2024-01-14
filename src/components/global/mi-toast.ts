@@ -1,10 +1,18 @@
 import { useToast } from 'vue-toast-notification'
 
-class MiToast {
-  toast = useToast()
+export default class MiToast {
+  toast = useToast({
+    position: 'top-right'
+  })
   failed(message: string) {
     this.toast.error(message)
   }
-}
 
-export default MiToast
+  success(message: string) {
+    this.toast.success(message)
+  }
+
+  info(message: string) {
+    this.toast.info(message)
+  }
+}
